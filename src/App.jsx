@@ -36,25 +36,16 @@ export default function App() {
         <Layout>
           <Routes>
             <Route path="/agricore" element={<HomePage />} />
-            <Route path="/agricore/about" element={<AboutPage />} />
-            <Route path="/agricore/services" element={<ServicesPage />} />
-            <Route path="/agricore/portfolio" element={<PortfolioPage />} />
-            <Route path="/agricore/blog" element={<BlogPage />} />
-            <Route path="/agricore/contact" element={<ContactPage />} />
-            <Route
-              path="/agricore/testimonials"
-              element={<TestimonialsPage />}
-            />
-            <Route path="/agricore/faq" element={<FAQPage />} />
-            <Route
-              path="/agricore/privacy-policy"
-              element={<PrivacyPolicy />}
-            />
-            <Route
-              path="/agricore/terms-of-service"
-              element={<TermsOfService />}
-            />
-            <Route path="/agricore/cookie-policy" element={<CookiePolicy />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/testimonials" element={<TestimonialsPage />} />
+            <Route path="/faq" element={<FAQPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/cookie-policy" element={<CookiePolicy />} />
           </Routes>
         </Layout>
       </Suspense>
