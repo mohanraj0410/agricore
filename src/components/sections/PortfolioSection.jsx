@@ -11,56 +11,58 @@ const PortfolioSection = memo(function PortfolioSection() {
   return (
     <section id="portfolio" aria-label="Project portfolio">
       <div className="container">
-        <div className="portfolio-header">
-          <RevealWrapper>
-            <SectionTag>Our Projects</SectionTag>
-            <h2 className="section-heading">
-              Where Vision
-              <br />
-              Meets the Earth
-            </h2>
-            <div
-              className="portfolio-filters"
-              role="group"
-              aria-label="Filter projects by category"
-            >
+        <div className="portfolio-header-v3">
+          <RevealWrapper className="portfolio-info-side">
+            <SectionTag>Signature Work</SectionTag>
+            <h2 className="section-title-v3">Where Nature Meets Design</h2>
+            <p className="portfolio-sub-v3">
+              Discover how we blend organic life with contemporary architecture 
+              to create sustainable, high-impact outdoor environments.
+            </p>
+          </RevealWrapper>
+          
+          <RevealWrapper className="portfolio-tabs-side" delay="0.1s">
+            <div className="portfolio-tabs-v3">
               {["all", "residential", "commercial", "rooftop"].map((f) => (
                 <button
                   key={f}
-                  className={`filter-btn ${activeFilter === f ? "active" : ""}`}
+                  className={`tab-btn-v3 ${activeFilter === f ? "active" : ""}`}
                   onClick={() => setActiveFilter(f)}
                 >
-                  {f.charAt(0).toUpperCase() + f.slice(1)}{" "}
-                  {f === "all" ? "Projects" : ""}
+                  {f === "all" ? "All Projects" : f.charAt(0).toUpperCase() + f.slice(1)}
                 </button>
               ))}
             </div>
           </RevealWrapper>
-          <RevealWrapper delay="0.1s">
-            <Link
-              to="/contact"
-              className="btn btn-primary"
-              style={{ flexShrink: 0 }}
-            >
-              Start Your Project →
-            </Link>
-          </RevealWrapper>
         </div>
-        <RevealWrapper className="portfolio-masonry" delay="0.2s">
-          {filtered.map((item) => (
-            <div key={item.id} className="portfolio-item">
-              <LazyImage
-                className="portfolio-img"
-                src={item.image}
-                alt={item.alt}
-              />
-              <div className="portfolio-overlay">
-                <span className="portfolio-cat">{item.category}</span>
-                <span className="portfolio-name">{item.name}</span>
+
+        <div className="portfolio-grid-v4">
+          {filtered.map((item, idx) => (
+            <RevealWrapper
+              key={item.id}
+              delay={`${0.1 * idx}s`}
+              className="portfolio-card-v4"
+            >
+              <div className="card-img-wrapper-v4">
+                <LazyImage
+                  className="card-img-v4"
+                  src={item.image}
+                  alt={item.alt}
+                />
               </div>
-            </div>
+              <div className="card-info-v4">
+                <div className="card-meta-v4">
+                  <span className="card-cat-v4">{item.category}</span>
+                  <span className="card-num-v4">0{idx + 1}</span>
+                </div>
+                <h3 className="card-name-v4">{item.name}</h3>
+                <Link to="/portfolio" className="card-link-v4">
+                   View Project Details →
+                </Link>
+              </div>
+            </RevealWrapper>
           ))}
-        </RevealWrapper>
+        </div>
       </div>
     </section>
   );

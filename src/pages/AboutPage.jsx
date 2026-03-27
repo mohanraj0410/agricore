@@ -1,7 +1,6 @@
 import { memo } from "react";
 import AboutSection from "../components/sections/AboutSection";
 import WhyUsSection from "../components/sections/WhyUsSection";
-import TestimonialsSection from "../components/sections/TestimonialsSection";
 import CTABanner from "../components/sections/CTABanner";
 
 const AboutPage = memo(function AboutPage() {
@@ -19,7 +18,6 @@ const AboutPage = memo(function AboutPage() {
       </div>
       <AboutSection />
       <WhyUsSection />
-      <TestimonialsSection />
       <CTABanner />
     </main>
   );

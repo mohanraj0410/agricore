@@ -4,6 +4,7 @@ import { useScrollNavbar } from "../../hooks/useScrollNavbar";
 import logo from "../../assets/images/favicon.png";
 
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaPhoneVolume } from "react-icons/fa6";
 
 const Navbar = memo(function Navbar() {
   const scrolled = useScrollNavbar(40);
@@ -26,7 +27,7 @@ const Navbar = memo(function Navbar() {
       >
         <div className="container nav-inner">
           <Link
-            to="/"
+            to="/agricore"
             className="logo"
             aria-label="Agricore Ventures Home"
             onClick={closeMobile}
@@ -59,9 +60,6 @@ const Navbar = memo(function Navbar() {
               <Link to="/portfolio">Projects</Link>
             </li>
             <li>
-              <Link to="/testimonials">Reviews</Link>
-            </li>
-            <li>
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
@@ -74,9 +72,12 @@ const Navbar = memo(function Navbar() {
                 padding: "10px 24px",
                 color: "white",
                 borderColor: "rgba(255,255,255,0.3)",
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
               }}
             >
-              📞 Call Us
+              <FaPhoneVolume size={14} /> Call Us
             </a>
             <Link
               to="/contact"
@@ -134,9 +135,6 @@ const Navbar = memo(function Navbar() {
             </Link>
             <Link to="/portfolio" onClick={closeMobile}>
               Projects
-            </Link>
-            <Link to="/testimonials" onClick={closeMobile}>
-              Reviews
             </Link>
             <Link to="/contact" onClick={closeMobile}>
               Contact

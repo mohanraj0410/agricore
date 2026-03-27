@@ -2,6 +2,7 @@ import { memo } from "react";
 import { Link } from "react-router-dom";
 import SectionTag from "../ui/SectionTag";
 import RevealWrapper from "../ui/RevealWrapper";
+import { FaPhoneVolume } from "react-icons/fa6";
 
 const CTABanner = memo(function CTABanner() {
   return (
@@ -46,8 +47,8 @@ const CTABanner = memo(function CTABanner() {
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </Link>
-          <a href="tel:+916369684474" className="btn btn-outline">
-            📞 +91 63696 84474
+          <a href="tel:+916369684474" className="btn btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <FaPhoneVolume size={14} /> +91 63696 84474
           </a>
         </div>
       </RevealWrapper>

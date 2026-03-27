@@ -1,21 +1,21 @@
-import HeroSection from '../components/sections/HeroSection'
-import MarqueeStrip from '../components/ui/MarqueeStrip'
-import AboutSection from '../components/sections/AboutSection'
-import ServicesSection from '../components/sections/ServicesSection'
-import ProcessSection from '../components/sections/ProcessSection'
-import PortfolioSection from '../components/sections/PortfolioSection'
-import WhyUsSection from '../components/sections/WhyUsSection'
-import TestimonialsSection from '../components/sections/TestimonialsSection'
-import FAQSection from '../components/sections/FAQSection'
-import CTABanner from '../components/sections/CTABanner'
-import ContactSection from '../components/sections/ContactSection'
+import HeroSection from "../components/sections/HeroSection";
+import MarqueeStrip from "../components/ui/MarqueeStrip";
+import AboutSection from "../components/sections/AboutSection";
+import ServicesSection from "../components/sections/ServicesSection";
+import ProcessSection from "../components/sections/ProcessSection";
+import PortfolioSection from "../components/sections/PortfolioSection";
+import WhyUsSection from "../components/sections/WhyUsSection";
+import TeamSection from "../components/sections/TeamSection";
+import FAQSection from "../components/sections/FAQSection";
+import CTABanner from "../components/sections/CTABanner";
+import ContactSection from "../components/sections/ContactSection";
 
 export default function HomePage() {
   return (
     <main>
       <HeroSection />
       <MarqueeStrip />
-      
+
       <div className="section-white">
         <AboutSection />
       </div>
@@ -24,21 +24,17 @@ export default function HomePage() {
         <ServicesSection />
       </div>
 
-      <div className="section-forest">
-        <ProcessSection />
-      </div>
+      <ProcessSection />
 
-      <div className="section-white section-divide">
+      <div className="section-white">
         <PortfolioSection />
       </div>
 
-      <div className="section-linen section-divide">
+      <div className="section-linen">
         <WhyUsSection />
       </div>
 
-      <div className="section-forest">
-        <TestimonialsSection />
-      </div>
+      <TeamSection />
 
       <div className="section-linen section-divide">
         <FAQSection />
@@ -52,5 +48,5 @@ export default function HomePage() {
         <ContactSection />
       </div>
     </main>
-  )
+  );
 }
