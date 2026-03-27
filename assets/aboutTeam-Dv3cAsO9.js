@@ -1,0 +1,1 @@
+var e=`/agricore/assets/aboutTeam-BwP4T3bX.jpeg`;export{e as t};
