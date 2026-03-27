@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Agricore</title>
+    <script type="text/javascript">
+      // GitHub Pages SPA redirect hack
+      // Encodes the path into a query string so the main index.html can restore it
+      var segmentCount = 1; // 1 = repo name is one path segment (e.g. /agricore)
+      var location = window.location;
+      location.replace(
+        location.protocol +
+          "//" +
+          location.hostname +
+          (location.port ? ":" + location.port : "") +
+          location.pathname
+            .split("/")
+            .slice(0, 1 + segmentCount)
+            .join("/") +
+          "/?/" +
+          location.pathname
+            .slice(1)
+            .split("/")
+            .slice(segmentCount)
+            .join("/")
+            .replace(/&/g, "~and~") +
+          (location.search
+            ? "&" + location.search.slice(1).replace(/&/g, "~and~")
+            : "") +
+          location.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
