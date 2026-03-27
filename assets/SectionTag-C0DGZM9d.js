@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-BnxRlLMJ.js";var t=e();function n({children:e,style:n}){return(0,t.jsx)(`div`,{className:`tag`,style:n,children:e})}export{n as t};
