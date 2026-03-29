@@ -1,1 +1,0 @@
-var e=`/agricore/assets/gardenDesign-C-lTbQSP.jpeg`;export{e as t};

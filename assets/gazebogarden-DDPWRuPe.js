@@ -1,0 +1,1 @@
+var e=`/agricore/assets/gardenswing-3-EyzvxI.JPG`,t=`/agricore/assets/gazebogarden-CF8N1620.JPG`;export{e as n,t};

@@ -1,1 +1,0 @@
-var e=`/agricore/assets/premiumGardenDesign-BX42ldV3.jpeg`,t=`/agricore/assets/artificialLandscape-De5HVa0t.jpeg`,n=`/agricore/assets/landscapeDesign-CEMKtbku.jpeg`,r=`/agricore/assets/verticalGarden-Bp3gSl68.jpeg`;export{e as i,n,t as r,r as t};
