@@ -59,13 +59,20 @@ const HeroSection = memo(function HeroSection() {
 
         <div className="hero-visual">
           <div className="main-image-panel">
-            <img src={premiumGardenDesign} alt="Premium Garden Design" />
+            <img 
+              src={premiumGardenDesign} 
+              alt="Premium Garden Design" 
+              fetchpriority="high"
+              loading="eager"
+            />
             <div className="image-overlay"></div>
           </div>
           <div className="accent-image-panel">
             <img
               src={artificialLandscape}
               alt="Detail of high-end garden feature"
+              fetchpriority="high"
+              loading="eager"
             />
           </div>
 

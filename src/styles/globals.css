@@ -1976,15 +1976,17 @@ footer {
 /* ─── CUSTOM CURSOR ─── */
 .custom-cursor {
   position: fixed;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   background: var(--gold);
   border-radius: 50%;
   pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
+  z-index: 10001;
+  margin-left: -3px;
+  margin-top: -3px;
   transition:
-    transform 0.1s ease,
+    width 0.3s cubic-bezier(0.19, 1, 0.22, 1),
+    height 0.3s cubic-bezier(0.19, 1, 0.22, 1),
     background 0.3s;
 }
 
@@ -1992,32 +1994,49 @@ footer {
   position: fixed;
   width: 32px;
   height: 32px;
-  border: 1px solid var(--gold);
+  border: 1px solid var(--gold-glow);
+  background: rgba(212, 175, 55, 0.05);
   border-radius: 50%;
   pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
+  z-index: 10000;
+  margin-left: -16px;
+  margin-top: -16px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   transition:
-    transform 0.15s ease-out,
-    width 0.3s,
-    height 0.3s,
-    border-color 0.3s;
+    transform 0.1s ease-out,
+    width 0.4s cubic-bezier(0.19, 1, 0.22, 1),
+    height 0.4s cubic-bezier(0.19, 1, 0.22, 1),
+    background 0.4s,
+    border-color 0.4s,
+    margin 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .custom-cursor.hover {
-  transform: translate(-50%, -50%) scale(0.5);
-  background: white;
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 .custom-cursor-follower.hover {
-  width: 56px;
-  height: 56px;
-  background: rgba(212, 175, 55, 0.1);
-  border-color: transparent;
+  width: 64px;
+  height: 64px;
+  margin-left: -32px;
+  margin-top: -32px;
+  background: rgba(13, 35, 25, 0.1);
+  border-color: var(--gold);
+  border-width: 1.5px;
 }
 
 .custom-cursor.active {
-  transform: translate(-50%, -50%) scale(1.5);
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  margin-top: -6px;
+}
+
+.custom-cursor-follower.active {
+  transform: scale(0.8) !important;
 }
 
 @media (max-width: 1024px) {

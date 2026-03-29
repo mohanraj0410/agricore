@@ -4,11 +4,21 @@ export function useScrollNavbar(threshold = 60) {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > threshold)
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    // Initial check
-    handleScroll()
-    return () => window.removeEventListener('scroll', handleScroll)
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setScrolled(window.scrollY > threshold);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [threshold])
 
   return scrolled

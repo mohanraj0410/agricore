@@ -27,7 +27,7 @@ const Navbar = memo(function Navbar() {
       >
         <div className="container nav-inner">
           <Link
-            to="/agricore"
+            to="/"
             className="logo"
             aria-label="Agricore Ventures Home"
             onClick={closeMobile}

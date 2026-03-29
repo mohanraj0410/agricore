@@ -10,7 +10,7 @@ const Footer = memo(function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <Link to="/agricore" className="logo">
+            <Link to="/" className="logo">
               <div className="logo-mark" style={{ padding: "4px" }}>
                 <img
                   src={logo}

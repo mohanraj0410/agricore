@@ -1,4 +1,4 @@
-import artificialLandscape from '../assets/images/artificialLandscape.png';
+import artificialLandscape from '../assets/images/artificialLandscape01.jpeg';
 import gardenLights from '../assets/images/gardenLights.jpeg';
 import landscapeDesign from '../assets/images/landscapeDesign.jpeg';
 import verticalGarden from '../assets/images/verticalGarden.jpeg';

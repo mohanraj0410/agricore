@@ -34,7 +34,7 @@ export default function App() {
         <ScrollToTop />
         <Layout>
           <Routes>
-            <Route path="/agricore" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
