@@ -2,7 +2,7 @@ import { memo } from "react";
 import SectionTag from "../ui/SectionTag";
 import RevealWrapper from "../ui/RevealWrapper";
 import LazyImage from "../ui/LazyImage";
-import aboutTeam from "../../assets/images/aboutTeam.jpeg";
+import whyUsImg from "../../assets/images/whyus.png";
 
 import { FaLeaf, FaBullseye, FaTrophy, FaShieldAlt } from "react-icons/fa";
 
@@ -13,8 +13,8 @@ const WhyUsSection = memo(function WhyUsSection() {
         <div className="why-grid">
           <RevealWrapper className="why-img">
             <LazyImage
-              src={aboutTeam}
-              alt="Agricore Ventures team collaborating on a garden design"
+              src={whyUsImg}
+              alt="Agricore Ventures premium landscaping excellence"
               width="700"
               height="500"
             />

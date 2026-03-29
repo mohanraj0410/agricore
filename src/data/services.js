@@ -1,11 +1,12 @@
-import artificialLandscape from '../assets/images/artificialLandscape.jpeg';
+import artificialLandscape from '../assets/images/artificialLandscape.png';
 import gardenLights from '../assets/images/gardenLights.jpeg';
 import landscapeDesign from '../assets/images/landscapeDesign.jpeg';
 import verticalGarden from '../assets/images/verticalGarden.jpeg';
-import gardenDesign from '../assets/images/gardenDesign.jpeg';
-import premiumGardenDesign from '../assets/images/premiumGardenDesign.jpeg';
-import brandBackground from '../assets/images/brandBackground.jpeg';
-import aboutTeam from '../assets/images/aboutTeam.jpeg';
+import fabricDesign from '../assets/images/fabaricdesign.JPG';
+import gardenSwings from '../assets/images/gardenswing.JPG';
+import gazeboGarden from '../assets/images/gazebogarden.JPG';
+import lawnMaintenance from '../assets/images/lawnmaintanence.JPG';
+import gardenMaintenance from '../assets/images/gardenmaintanence.JPG';
 
 export const services = [
   {
@@ -49,7 +50,7 @@ export const services = [
     name: 'Fabric Design',
     description: 'Custom fabric installations, shade sails, and outdoor upholstery for stylish and comfortable garden areas.',
     icon: '🧶',
-    image: gardenDesign,
+    image: fabricDesign,
     imageAlt: 'Garden area fabric and shade design',
     isLarge: false,
   },
@@ -58,7 +59,7 @@ export const services = [
     name: 'Garden Swings',
     description: 'Durable and aesthetic swing installations, from classic wooden sets to modern hanging pods for your garden.',
     icon: '🎠',
-    image: gardenDesign,
+    image: gardenSwings,
     imageAlt: 'Elegant garden swings and seating',
     isLarge: false,
   },
@@ -67,7 +68,7 @@ export const services = [
     name: 'Gazebo Gardens',
     description: 'Expertly designed gazebos and pavilions that serve as the focal point for your outdoor living space.',
     icon: '🏠',
-    image: premiumGardenDesign,
+    image: gazeboGarden,
     imageAlt: 'Garden gazebos and outdoor pavilions',
     isLarge: false,
   },
@@ -76,7 +77,7 @@ export const services = [
     name: 'Lawn Maintenance',
     description: 'Lush, healthy lawns through precision mowing, aeration, over-seeding and organic lawn care programs.',
     icon: '🌱',
-    image: artificialLandscape,
+    image: lawnMaintenance,
     imageAlt: 'Professional lawn management and care',
     isLarge: false,
   },
@@ -85,7 +86,7 @@ export const services = [
     name: 'Garden Maintenance',
     description: 'Year-round maintenance contracts keeping your garden in peak condition — pruning, fertilizing, pest control and seasonal planting.',
     icon: '✂️',
-    image: aboutTeam,
+    image: gardenMaintenance,
     imageAlt: 'Regular garden maintenance services',
     isLarge: false,
   },

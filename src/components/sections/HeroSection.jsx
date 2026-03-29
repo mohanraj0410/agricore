@@ -2,7 +2,7 @@ import { memo } from "react";
 import { Link } from "react-router-dom";
 import brandBg from "../../assets/images/brandBackground.jpeg";
 import premiumGardenDesign from "../../assets/images/premiumGardenDesign.jpeg";
-import artificialLandscape from "../../assets/images/artificialLandscape.jpeg";
+import artificialLandscape from "../../assets/images/artificialLandscape01.jpeg";
 
 const HeroSection = memo(function HeroSection() {
   return (

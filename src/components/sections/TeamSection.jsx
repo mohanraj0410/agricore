@@ -5,28 +5,36 @@ import LazyImage from "../ui/LazyImage";
 import director01 from "../../assets/images/director01.jpg";
 import director02 from "../../assets/images/director02.jpg";
 import finance01 from "../../assets/images/financial&account.png";
+import business01 from "../../assets/images/businesshead.PNG";
 
 const teamMembers = [
   {
     id: 1,
     name: "Akash",
     role: "Director",
-    bio: "Driving the company's strategic vision and ensuring that every project reflects our core values of sustainability and architectural innovation.",
+    bio: "With over a decade of experience in agro-innovation, Akash drives Agricore's strategic vision, ensuring every project balances environmental sustainability with cutting-edge landscape architecture.",
     image: director02,
   },
   {
     id: 2,
     name: "Bubesh Kumar",
     role: "Director",
-    bio: "Leading operational excellence and overseeing complex architectural installations, ensuring seamless execution from blueprint to breathtaking reality.",
+    bio: "Leading our on-ground operations, Bubesh oversees complex horticultural projects from design to completion, ensuring the seamless transformation of blueprints into thriving green realities.",
     image: director01,
   },
   {
     id: 3,
     name: "Nandhini",
     role: "Finance & Account",
-    bio: "Managing the firm's financial health, project budgeting, and transparent accounting, ensuring every venture remains legally and economically sound.",
+    bio: "Meticulous in financial planning and transparent accounting, Nandhini manages the firm's fiscal health, ensuring all landscaping ventures are economically viable and legally robust.",
     image: finance01,
+  },
+  {
+    id: 4,
+    name: "Manimegalai",
+    role: "Business Development Head",
+    bio: "Dedicated to building lasting partnerships, Manimegalai leads our growth strategy, connecting clients across South India with bespoke sustainable landscaping solutions that elevate their outdoor spaces.",
+    image: business01,
   },
 ];
 
